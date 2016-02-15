@@ -1,8 +1,9 @@
 # ProxSensor
 Proximity sensor demo app
 
-http://imgur.com/SPApsOA
-http://imgur.com/rs2Nuqn
+![Close](http://imgur.com/SPApsOA)
+![Far](http://imgur.com/rs2Nuqn)
+
 
 
 
