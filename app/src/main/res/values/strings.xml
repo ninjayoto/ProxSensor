@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProxSensor</string>
+    <string name="instructions">Bring your hand closer to the ear piece</string>
+    <string name="tooclose">Ok, this is too close, give me some space</string>
+    <string name="closer">Cover the ear piece with your hand</string>
+</resources>
