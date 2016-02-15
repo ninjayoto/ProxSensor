@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-// The activity implements SensorEventListner to allow us to register a listner
+// The activity implements SensorEventListener to allow us to register a listener
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
     private SensorManager mSensorManager;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     protected void onResume() {
         super.onResume();
-        //we call refgisterListner method of the SensorEventListner interface
+        //we call registerListener method of the SensorEventListener interface
         //we give it a context, sensor object and the sensor response delay
         mSensorManager.registerListener(this, mSensor,
                 SensorManager.SENSOR_DELAY_NORMAL);
@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             text.setText(R.string.tooclose);
 
         } else {
+            //getColor method is deprecated in Android Marshmallow. However, the replacement method (a two-parameter getColor()
+            // that takes the color resource ID and a Resources.Theme object) is only available in the M Developer Preview
             getWindow().getDecorView().setBackgroundColor(getResources().getColor(R.color.far));
                 text.setText(R.string.closer);
 
